@@ -1,0 +1,182 @@
+.navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+.navli {
+	float: left;
+}
+
+.navli a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  background-color: black;
+}
+
+.navli a:hover {
+  background-color: #666666;
+}
+* {
+  font-family: 'JetBrains Mono', monospace;
+  background-color: gray;
+}
+.maincontent {
+	margin-top: 1%;
+	background-color: black;
+	padding-bottom: 11%;
+	padding-top: 1%;
+	display: grid;
+	
+}
+.logo {
+	display: block;
+	width: 30%;
+	border-radius: 50%;
+	margin-left: 10%;
+	z-index: 1;
+	grid-row: 1;
+	grid-column: 1;
+	margin-top: 2.75%;
+
+}
+.imdot {
+	display: block;
+	width: 35%;
+	aspect-ratio: 1;
+	margin-left: 7.5%;
+	margin-top: 0.5%;
+  	background-color: white;
+  	border-radius: 50%;
+  	z-index: 0;
+	grid-row: 1;
+	grid-column: 1;
+}
+.title {
+	margin-top: 5%;
+	position: absolute;
+	margin-left: 45%;
+	background-color: black;
+	color: #33FF00;
+	padding: 0.5% 20%;
+	overflow: hidden;
+	white-space: nowrap;
+	direction: rtl;
+}
+
+#about-title {
+	margin-top: 0%;
+	position: absolute;
+	margin-left: 20%;
+	padding: 0.5% 20%;
+	overflow: hidden;
+	white-space: nowrap;
+	direction: rtl;
+}
+
+.blink_me {
+    animation: blinker 1.5s linear infinite;
+    background-color: black;
+}
+
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
+}
+
+.glow-on-hover {
+    width: 20%;
+    height: 10%;
+    border: none;
+    outline: none;
+    color: white;
+    background: #333333;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+#about-button {
+	margin-left: 61.125%;
+    	margin-top: 10%;
+    	position: absolute;
+}
+
+#about-button:before {
+	background: white;
+}
+
+#famous-button {
+	margin-left: 61.125%;
+    	margin-top: 17%;
+    	position: absolute;
+}
+
+#famous-button:before {
+	background: blue;
+}
+
+#techniques-button {
+	margin-left: 61.125%;
+    	margin-top: 24%;
+    	position: absolute;
+}
+
+#techniques-button:before {
+	background: red;
+}
+
+
+
+.glow-on-hover:before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-on-hover:active {
+    color: #000
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #333333;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
