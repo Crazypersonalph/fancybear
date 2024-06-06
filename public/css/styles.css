@@ -9,6 +9,8 @@
 	float: left;
 }
 
+
+
 .navli a {
   display: block;
   color: white;
@@ -21,18 +23,37 @@
 .navli a:hover {
   background-color: #666666;
 }
+
+#technique-nav:hover {
+	background-color: red;
+}
+
+#famous-nav:hover {
+	background-color: blue;
+}
+
 * {
   font-family: 'JetBrains Mono', monospace;
   background-color: gray;
 }
 .maincontent {
-	margin-top: 1%;
+	margin-top: 1.225%;
 	background-color: black;
 	padding-bottom: 11%;
 	padding-top: 1%;
 	display: grid;
 	
 }
+
+#indexcontent {
+	padding-bottom: 9%;
+}
+
+#aboutcontent {
+	padding-bottom: 2%;
+}
+
+
 .logo {
 	display: block;
 	width: 30%;
@@ -41,7 +62,7 @@
 	z-index: 1;
 	grid-row: 1;
 	grid-column: 1;
-	margin-top: 2.75%;
+	margin-top: 5%;
 
 }
 .imdot {
@@ -49,7 +70,7 @@
 	width: 35%;
 	aspect-ratio: 1;
 	margin-left: 7.5%;
-	margin-top: 0.5%;
+	margin-top: 2.5%;
   	background-color: white;
   	border-radius: 50%;
   	z-index: 0;
@@ -76,6 +97,63 @@
 	overflow: hidden;
 	white-space: nowrap;
 	direction: rtl;
+}
+
+#technique-title {
+	margin-top: 0%;
+	position: absolute;
+	margin-left: 20%;
+	padding: 0.5% 10%;
+	overflow: hidden;
+	white-space: nowrap;
+	direction: rtl;
+}
+
+#famous-title {
+	margin-top: 0%;
+	position: absolute;
+	margin-left: 20%;
+	padding: 0.5% 10%;
+	overflow: hidden;
+	white-space: nowrap;
+	direction: rtl;
+}
+
+#references-title {
+	margin-top: 0%;
+	position: absolute;
+	margin-left: 32.5%;
+	padding: 0.5% 10%;
+	overflow: hidden;
+	white-space: nowrap;
+	direction: rtl;
+}
+
+#motives-title {
+	margin-top: 0%;
+	position: absolute;
+	margin-left: 30%;
+	padding: 0.5% 10%;
+	overflow: hidden;
+	white-space: nowrap;
+	direction: rtl;
+}
+
+
+.text-div {
+	background-color: black;
+	margin-top: 6%;
+	padding-left: 1%;
+	padding-right: 1%;
+}
+
+.text {
+	background-color: black;
+	color: #33FF00;
+	text-align: left;
+	white-space: pre-line;
+	padding-bottom: 1.5%;
+
 }
 
 .blink_me {
@@ -126,6 +204,16 @@
 	margin-left: 61.125%;
     	margin-top: 24%;
     	position: absolute;
+}
+
+#motives-button {
+	margin-left: 61.125%;
+    margin-top: 31%;
+    position: absolute;
+}
+
+#motives-button:before {
+	background: white;
 }
 
 #techniques-button:before {
@@ -180,3 +268,29 @@
     100% { background-position: 0 0; }
 }
 
+#fbi-wanted-poster {
+	float: right;
+}
+
+#tv5monde-hacked {
+	float: left;
+	padding: 2%;
+	background-color: black;
+}
+
+.hacklist {
+	background-color: black;
+	color: #33FF00;
+	margin-bottom: 2%;
+}
+
+#famous-div {
+	margin-bottom: 1%;
+	padding-bottom: 0%;
+}
+
+.technique-list {
+	background-color: black;
+	color: #33FF00;
+	margin-bottom: 2%;
+}
