@@ -19,29 +19,28 @@
 		<li class="navli" style="float: right;"><a href="/references">References</a></li>
 	</ul>
 
-        <div class="maincontent">
-                <h1 class="title" id="technique-title"><span class="blink_me">_</span>Techniques employed by Fancy Bear</h1>
+        <div class="maincontent" id="technique-div">
+                <h1 class="title" id="technique-title"><span class="blink_me">_</span>Techniques employed by Fancy Bear, and their Calling Cards</h1>
                 <div class="text-div">
+                        <img width="40%" id="techniques-img" src="/public/images/c2.png" alt="A diagram of how C2 servers encrypt and send commands to an infected victim.">
                         <ul class="technique-list">
                                 <li class="technique-list">Phishing - Phishing refers to an attempt to steal sensitive information, typically in the form of usernames, passwords, credit card numbers, bank account information, or other important data in order to utilise or sell the stolen information.</li>
-                                <li class="technique-list">Credential Harvesting - </li>
-                                <li class="technique-list">Vulnerability Scanning - </li>
-                                <li class="technique-list">Remote Code Execution - </li>
-                                <li class="technique-list">File Transmission - </li>
-                                <li class="technique-list">Keylogging - </li>
-                                <li class="technique-list">Token Impersonation - </li>
-                                <li class="technique-list">Password Spraying - </li>
-                                <li class="technique-list">Network Denial of Service - </li>
-                                <li class="technique-list">Exfiltration over Assymetric Encrypted Non-C2 Protocol - </li>
-                                <li class="technique-list">Chopstick Backdoor - </li>
-                                <li class="technique-list">Eviltoss Backdoor - </li>
-                                <li class="technique-list">Gamefish - </li>
-                                <li class="technique-list">Sourface - </li>
-                                <li class="technique-list">Oldbait - </li>
-                                <li class="technique-list">Coreshell - </li>
+                                <li class="technique-list">Credential Harvesting - Credential Harvesting is the collection of various different credentials from various different services/places. These credentials can be collected in order to be weaponised in conjunction with bruteforcing.</li>
+                                <li class="technique-list">Vulnerability Scanning - Vulnerability scanning is the act of scanning a computer system or network in order to find known vulnerable services running, usually in order to get a foothold into a network. They usually identify easy vulnerabilities referred to as 'low-hanging fruit'.</li>
+                                <li class="technique-list">Remote Code Execution - Remote Code Execution refers to an adversary's ability to run code on other people's servers without having authorised access. It can be used to further deploy malware, or to steal sensitive information.</li>
+                                <li class="technique-list">File Transmission - File Transmission refers to the act of sending files back and forth from two servers or computers. File Transmission is often used to exfiltrate information from and upload malware onto a victim server.</li>
+                                <li class="technique-list">Keylogging - Keylogging is the act of recording the keystrokes inputted into a victim computer. It is most often used in order to gain access to credentials, in order to gain higher privileges on a system or network, or in order to get access to various different services with the stolen credentials.</li>
+                                <li class="technique-list">Token Impersonation - The Windows Operating System has such things called Access Tokens. They are these pieces of data usually held in memory that define the security context of running processes and users; their privileges, what they can and can't access, etc. Token impersonation refers to using special commands and technique within Windows in order to find and use these tokens, in order to escalate privileges.</li>
+                                <li class="technique-list">Password Spraying - Password Spraying is a technique used by bad actors in order to get access to accounts. It involves compiling a small list of possible passwords, usually specific to an organisation, and trying the list against many, many different known and unknown usernames. It would be considered successful if the adversaries are able to use one of the passwords in order to log into one of the usernames.</li>
+                                <li class="technique-list">Network Denial of Service - Network Denial of Service is the term that refers to degrading or blocking the availability of a network resource to users, in order to cause as much fiscal or organisational damage as possible.</li>
+                                <li class="technique-list">Exfiltration over Assymetric Encrypted Non-C2 Protocol - This is the term that refers to when attackers use public-key/private-key cryptography in order to exfiltrate data over a command and control channel that is not normally used. It is used to hide the presence of the bad actors, in order to exfiltrate as much information as possible, and makes it harder for defenders to analyse an attack, due to the protocol and end server being used being different, on top of the added encryption.</li>
+                                <li class="technique-list">Chopstick Backdoor - CHOPSTICK is a family of backdoors developed by Fancy Bear in order to gain further access to a system. It is usually a second-stage payload, but can also be used as a first-stage payload. It has been used on both Windows and Linux since 2012, and often uses web protocols such as HTTPS in order to exfiltrate information and receive commands. It also has Command and Control capabilities, again through HTTPS.</li>
+                                <li class="technique-list">Eviltoss Backdoor - EVILTOSS, similar to CHOPSTICK, is also a second-stage malware payload. It has similar behaviour to CHOPSTICK, and is thought to have the same aims and goals. On top of this, it is used to identify further vulnerabilities in a computer system or network.</li>
+                                <li class="technique-list">Gamefish - GAMEFISH is a first-stage malware payload developed by Fancy Bear. It utilises the infamous EternalBlue exploit developed by the NSA in order to gain full access to computer systems. It is often loaded onto victim computer systems through things like Word macros.</li>
+                                <li class="technique-list">Oldbait - OLDBAIT is a credential harvester created and employed by Fancy Bear. Like the name implies, it is used to collect and harvest various different credentials, and send it back to the attackers through a C2 channel.</li>
+                                <li class="technique-list">Coreshell - CORESHELL is a downloader created and employed by Fancy Bear. It is used initially as a way to get more malware onto a compromised system with a foothold.</li>
                         </ul>
                 </div>
         </div>
-        <script src="/public/about.js"></script>
         </body>
 </html>
