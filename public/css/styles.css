@@ -80,10 +80,9 @@
 .title {
 	margin-top: 5%;
 	position: absolute;
-	margin-left: 45%;
+	margin-left: 65%;
 	background-color: black;
 	color: #33FF00;
-	padding: 0.5% 20%;
 	overflow: hidden;
 	white-space: nowrap;
 	direction: rtl;
@@ -92,8 +91,7 @@
 #about-title {
 	margin-top: 0%;
 	position: absolute;
-	margin-left: 20%;
-	padding: 0.5% 20%;
+	margin-left: 40%;
 	overflow: hidden;
 	white-space: nowrap;
 	direction: rtl;
@@ -102,8 +100,7 @@
 #technique-title {
 	margin-top: 0%;
 	position: absolute;
-	margin-left: 10%;
-	padding: 0.5% 10%;
+	margin-left: 32.5%;
 	overflow: hidden;
 	white-space: nowrap;
 	direction: rtl;
@@ -112,8 +109,7 @@
 #famous-title {
 	margin-top: 0%;
 	position: absolute;
-	margin-left: 20%;
-	padding: 0.5% 10%;
+	margin-left: 30%;
 	overflow: hidden;
 	white-space: nowrap;
 	direction: rtl;
@@ -122,8 +118,7 @@
 #references-title {
 	margin-top: 0%;
 	position: absolute;
-	margin-left: 32.5%;
-	padding: 0.5% 10%;
+	margin-left: 45%;
 	overflow: hidden;
 	white-space: nowrap;
 	direction: rtl;
@@ -132,8 +127,7 @@
 #motives-title {
 	margin-top: 0%;
 	position: absolute;
-	margin-left: 30%;
-	padding: 0.5% 10%;
+	margin-left: 37.5%;
 	overflow: hidden;
 	white-space: nowrap;
 	direction: rtl;
